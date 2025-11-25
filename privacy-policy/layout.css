@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+@import url("framework.css");
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact{}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:white;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#DDC915;}
+
+.overlay::after{color:white; background-color:/*rgba(0,0,0,.55)*/ white;}
+
+.btn, .btn.inverse:hover{color:white; background-color:#DDC915; border-color:#DDC915;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+article .icon{color:#FFFFFF; background-color:#292B2C;}
+article:hover .icon{color:#292B2C; background-color:#DDC915;}
+
+/*For the register button*/
+
+/* Rows */
+.row0{color:black; background-color:white;}
+.row0 a{color:inherit;}
+.row1{background-color:#2b2c31; max-height: 20%;}
+.row5, .row5 a{color:#C1C1C1; background-color:#2b2c31;}
+
+.coloured{color:#292B2C; background-color:#DDC915;}
+.coloured .btn.inverse:hover{color:#DDC915; background-color:#FFFFFF; border-color:#FFFFFF;}
+
+
+/* Footer */
+#footer .title{color:#FFFFFF;}
+#footer .linklist li{border-color:#1D1E1F;}
+
+
+.icon:hover{
+    color:#f49000;  
+}
+
+#register-btn-mobile{
+  display:none !important;
+}
+
+.custom-footer{
+
+}
+
+ul,li{
+  display: inline;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
